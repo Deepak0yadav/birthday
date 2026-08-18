@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Akhansha 💕</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <!-- floating background decor -->
+    <div
+      class="bg-decor"
+      id="bgDecor"></div>
+
+    <!-- MUSIC PLAYER (global) -->
+    <audio
+      id="bgMusic"
+      src="assets/audio/background-music.mp3"
+      loop></audio>
+    <audio
+      id="bdaySong"
+      src="assets/audio/birthdaysong.mp3"
+      loop></audio>
+
+    <main id="app">
+      <!-- ===================== SCREEN 1: WELCOME ===================== -->
+      <section
+        class="screen active"
+        id="screen-welcome">
+        <div class="bunting bunting-left">🎀🎀🎀🎀🎀</div>
+        <div class="bunting bunting-right">🎀🎀🎀🎀🎀</div>
+
+        <div class="welcome-grid">
+          <div class="welcome-text">
+            <h1 class="hb-title">
+              <span class="hb-line1">Happy</span>
+              <span class="hb-line2">Birthday</span>
+            </h1>
+            <div class="date-badge">⭐ 18 August 2026 ⭐</div>
+            <button
+              class="btn btn-primary"
+              id="startBtn">
+              Begin ✨
+            </button>
+          </div>
+
+          <div class="welcome-photo">
+            <div class="balloon balloon-1">🎈</div>
+            <div class="balloon balloon-2">🎈</div>
+            <div class="balloon balloon-3">🎈</div>
+            <div class="photo-frame">
+              <img
+                src="assets/photos/akhansha.jpeg"
+                alt="Akhansha"
+                id="mainPhoto" />
+            </div>
+            <div class="name-tag">Dear Akhansha 💗</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SCREEN 2: CARD ===================== -->
+      <section
+        class="screen"
+        id="screen-card">
+        <h2 class="section-heading">A Little Card For You 💌</h2>
+        <div
+          class="card-wrap"
+          id="cardWrap">
+          <div
+            class="card3d"
+            id="card3d">
+            <div class="card-face card-front">
+              <div class="card-front-inner">
+                <img
+                  src="assets/photos/akhansha.jpeg"
+                  alt="Akhansha"
+                  class="card-mini-photo" />
+                <p class="card-to">To: Akhansha</p>
+                <h3 class="card-title-neon">Happy<br />Birthday</h3>
+                <p class="tap-hint">tap to open →</p>
+              </div>
+            </div>
+            <div class="card-face card-inside">
+              <h4 class="to-you">To You! 🎁</h4>
+              <p class="letter-text">
+                Happy Birthday Akhansha ❤️<br /><br />
+                Itne saare logo mein se, mujhe tum mili, and honestly that's one
+                of the best things that's happened to me. Tumhari smile dekh kar
+                mera din theek ho jaata hai, chahe kuch bhi ho raha ho.<br /><br />
+                Tum sirf meri girlfriend nahi ho, meri best friend bhi ho —
+                jisse main kuch bhi share kar sakta hoon, bina kisi hesitation
+                ke. Hope this year brings you everything you deserve.<br /><br />
+                Thanks for putting up with me and still loving me the way you
+                do. Main hamesha tumhare saath hoon, har cheez mein.<br /><br />
+                Happy Birthday, meri Akhansha. Love you. 💖
+              </p>
+              <p class="card-sign">Yours forever,<br />Saurabh</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="btn btn-primary next-btn"
+          data-next="screen-gallery">
+          Next Surprise ✨
+        </button>
+      </section>
+
+      <!-- ===================== SCREEN 3: MEMORY LANE ===================== -->
+      <section
+        class="screen"
+        id="screen-gallery">
+        <div class="confetti-corner tl">✨</div>
+        <div class="confetti-corner tr">⭐</div>
+        <h2 class="section-heading grad-text">Our Memory Lane</h2>
+        <p class="section-sub">
+          A little journey through some of my favorite moments with you 💞
+        </p>
+
+        <div
+          class="gallery-track"
+          id="galleryTrack">
+          <div class="gallery-card">
+            <img
+              src="assets/photos/photo1.jpeg"
+              alt="memory" />
+            <p class="gallery-caption">
+              This smile is my favorite thing in the world 😍
+            </p>
+          </div>
+          <div class="gallery-card">
+            <img
+              src="assets/photos/photo2.jpeg"
+              alt="memory" />
+            <p class="gallery-caption">Just us being us 💑</p>
+          </div>
+          <div class="gallery-card">
+            <img
+              src="assets/photos/photo3.jpeg"
+              alt="memory" />
+            <p class="gallery-caption">
+              Shopping trips hit different with you around 🛍️
+            </p>
+          </div>
+          <div class="gallery-card">
+            <img
+              src="assets/photos/photo4.jpeg"
+              alt="memory" />
+            <p class="gallery-caption">Best hugs ever, no competition 🤗</p>
+          </div>
+          <div class="gallery-card">
+            <img
+              src="assets/photos/akhansha.jpeg"
+              alt="memory" />
+            <p class="gallery-caption">My favorite person, in one frame 💗</p>
+          </div>
+        </div>
+
+        <button
+          class="btn btn-primary next-btn"
+          data-next="screen-reasons">
+          Next Surprise ✨
+        </button>
+      </section>
+
+      <!-- ===================== SCREEN 4: REASONS I LOVE YOU ===================== -->
+      <section
+        class="screen"
+        id="screen-reasons">
+        <h2 class="section-heading grad-text">A Few Reasons I Love You</h2>
+        <p class="section-sub">Tap each card 💗</p>
+
+        <div class="flip-grid">
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">😊</div>
+              <div class="flip-back">
+                Your smile fixes my whole day, every single time.
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">🫶</div>
+              <div class="flip-back">
+                You care for everyone around you like it's effortless.
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">💪</div>
+              <div class="flip-back">
+                You're stronger than you give yourself credit for.
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">🎧</div>
+              <div class="flip-back">
+                You listen to me talk nonsense and still stay 😂
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">🤍</div>
+              <div class="flip-back">
+                You feel like home, even on the hardest days.
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">💞</div>
+              <div class="flip-back">
+                Simply put — being loved by you is my favorite thing.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="btn btn-primary next-btn"
+          data-next="screen-cake">
+          Next Surprise ✨
+        </button>
+      </section>
+
+      <!-- ===================== SCREEN 5: CAKE ===================== -->
+      <section
+        class="screen"
+        id="screen-cake">
+        <h2 class="section-heading grad-text">Make A Wish 🎂</h2>
+        <p
+          class="section-sub"
+          id="cakeHint">
+          Click the candles to blow them out
+        </p>
+
+        <div class="cake-wrap">
+          <div
+            class="cake"
+            id="cake">
+            <div
+              class="flames"
+              id="flames">
+              <span
+                class="candle-flame"
+                data-i="1"
+                >🕯️</span
+              >
+              <span
+                class="candle-flame"
+                data-i="2"
+                >🕯️</span
+              >
+              <span
+                class="candle-flame"
+                data-i="3"
+                >🕯️</span
+              >
+            </div>
+            <div class="cake-frosting"></div>
+            <div class="cake-tier cake-tier-top">
+              <span class="sprinkle">🍒</span>
+              <span class="sprinkle">✨</span>
+              <span class="sprinkle">🍒</span>
+            </div>
+            <div class="cake-ribbon"></div>
+            <div class="cake-tier cake-tier-base"></div>
+            <div class="cake-plate"></div>
+            <div class="cake-shadow"></div>
+          </div>
+        </div>
+
+        <button
+          class="btn btn-primary next-btn"
+          data-next="screen-final">
+          Next Surprise ✨
+        </button>
+      </section>
+
+      <!-- ===================== SCREEN 6: FINAL ===================== -->
+      <section
+        class="screen"
+        id="screen-final">
+        <div class="final-content">
+          <h2 class="section-heading grad-text">Happy Birthday, Akhansha 💖</h2>
+          <p class="final-msg">
+            I hope today feels as special as you make every day feel for me. Yeh
+            sirf shuruat hai — bahut saare birthdays aur bahut sara pyaar abhi
+            baaki hai. Here's to more memories, more laughs, and more us. 🥂
+          </p>
+          <p class="final-sign">Yours forever,<br />Saurabh ❤️</p>
+          <button
+            class="btn btn-primary"
+            id="restartBtn">
+            Watch Again ↻
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
