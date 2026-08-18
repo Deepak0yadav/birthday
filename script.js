@@ -83,7 +83,7 @@ flames.forEach(flame => {
       bdaySong.play().catch(() => { });
     }
     if (blownCount === flames.length) {
-      cakeHint.textContent = 'Wish made! Happy Birthday Akhansha 🎉';
+      cakeHint.textContent = 'Wish made! Happy Birthday Akanksha 🎉';
       burstConfetti();
     }
   });
